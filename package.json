@@ -1,0 +1,24 @@
+{
+  "name": "chattelwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run serverD \"  \" npm run client\" ",
+    "serverD": "nodemon app.js",
+    "start": "node app.js",
+    "client": "cd Client && npm run start",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Client && npm run build --prefix Client"
+  },
+  "author": "",
+  "license": "ISC"
+}

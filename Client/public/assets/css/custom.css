@@ -1,0 +1,17 @@
+#datatable {
+  margin-top: 20px;
+  font-family: monospace;
+}
+#datatable th {
+  text-align: center;
+  padding: 2px 3px;
+}
+#datatable td {
+  padding: 1px;
+  color: #4b4442;
+  text-align: center;
+}
+#heading {
+  text-align: center;
+  font-size: 40px;
+}
